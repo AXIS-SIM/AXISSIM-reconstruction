@@ -53,8 +53,27 @@ scale_factor   = 1;  % Scaling factor for PSF exponentiation
 %  LOAD DATA & PRE-PROCESSING
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-disp("Loading data...");
-load("AXIS-SIM data/Fig3a_MicroTubule_AXIS_SIM.mat"); % Load dataset
+disp("Loading TIFF files...");
+
+firstFile = sprintf("./AXIS-SIM data/Fig3a_MicroTubule_AXIS_SIM_1.tif");
+info = imfinfo(firstFile);
+imgWidth = info(1).Width;  % 512
+imgHeight = info(1).Height; % 512
+
+% Rawdata (512x512x100x26, uint16)
+Rawdata = zeros(imgHeight, imgWidth, layer_num, total_layers, 'uint16');
+
+for i = 1:total_layers
+    fileName = sprintf("./AXIS-SIM data/Fig3a_MicroTubule_AXIS_SIM_%d.tif", i);
+    fprintf("Reading: %s\n", fileName);
+    for j = 1:layer_num
+        Rawdata(:,:,j,i) = imread(fileName, j);
+    end
+end
+
+Rawdata = double(Rawdata);
+
+disp("Data successfully loaded into Rawdata array.");
 
 % Compute the SUM projection for each layer (sum along the frame dimension)
 WF = zeros(size(Rawdata,1), size(Rawdata,2), total_layers);
