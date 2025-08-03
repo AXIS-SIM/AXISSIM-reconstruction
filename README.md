@@ -16,9 +16,8 @@ All parameters used to reproduce the cellular imaging experiments in the paper a
 # System Requirements
 MATLAB R2021b is recommended. All data in our publication was reconstructed using this version.
 
-%% # Notes
-%% Please refer to our paper for detailed descriptions of the reconstruction algorithm and imaging experiments.
-%% If you encounter any issues, need assistance, or wish to access additional datasets, please contact the corresponding author.
-
-%% Additional data are available upon reasonable request.
+# Notes
+Please refer to our paper for detailed descriptions of the reconstruction algorithm and imaging experiments.
+If you encounter any issues, please contact the corresponding author.
+Additional datasets are available from the corresponding author upon reasonable request.
 
