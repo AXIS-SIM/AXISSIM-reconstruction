@@ -4,17 +4,21 @@ This repository provides the custom MATLAB reconstruction algorithm developed fo
 "Near-isotropic Super-Resolution Microscopy with Axial Interference Speckle Illumination."
 AXIS-SIM stands for Axial Interference Speckle (AXIS)-engineered Structured Illumination Microscopy.
 
-# Dataset
+## Dataset
 Due to file size limitations, the test dataset is hosted on Figshare and can be downloaded from the following link:
 https://figshare.com/articles/dataset/AXIS-SIM_dataset/29816543
 
-After downloading, please place the contents into the AXIS-SIM data folder in the repository root.
+## How to Run
+To reproduce the reconstruction:
+1. Download and unzip the Figshare dataset into the `AXIS-SIM data` folder.
+2. Open `AXIS_main_reconstruction.m` in MATLAB R2021b.
+3. Run the script. 
 
-# Parameters
+## Parameters
 All parameters used to reproduce the cellular imaging experiments in the paper are pre-set in the provided code.
 
-# System Requirements
-MATLAB R2021b is recommended. All data in our publication was reconstructed using this version.
+## System Requirements
+We recommend MATLAB R2021b. All required functions are included in the repository, and no additional installation is necessary. 
 
 # Notes
 Please refer to our paper for detailed descriptions of the reconstruction algorithm and imaging experiments.
