@@ -1,0 +1,7 @@
+Copyright (c) 2025 Hajun Yoo
+
+This software is provided for non-commercial academic research purposes only.
+Commercial use is not permitted without prior written permission. 
+
+This implementation is based on:
+Zhao et al., "Enhanced detection of fluorescence fluctuations for high-throughput super-resolution imaging," Nat. Photonics 17, 806–813 (2023).
