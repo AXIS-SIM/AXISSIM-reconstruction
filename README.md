@@ -25,3 +25,7 @@ Please refer to our paper for detailed descriptions of the reconstruction algori
 If you encounter any issues, please contact the corresponding author.
 Additional datasets are available from the corresponding author upon reasonable request.
 
+### License
+This software is provided for non-commercial academic use only.  
+Commercial use is not permitted without prior written permission.  
+
